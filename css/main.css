@@ -15,11 +15,43 @@ body {
 .content-link:hover {
     color: navajowhite;
     transition: 3s;
-    text-shadow:
-            1px 1px gray,
-            2px 2px gray,
-            3px 3px gray;
-    transform: translateX(-3px);
     text-decoration: none;
 }
+
+.fade-in {
+    animation: fadein 3s;
+}
+
+.fade-in-2 {
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.breath {
+    animation: breath-effect 5s infinite;
+}
+
+@keyframes breath-effect {
+    0% {transform:scale(1,1);}
+    50% {transform:scale(1.1,1.1);}
+    100%{transform:scale(1,1);}
+}
+
+.fade-out {
+    animation: fadeout 6s;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+
+
+
+
 
