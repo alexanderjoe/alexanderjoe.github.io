@@ -1,57 +1,19 @@
 body {
-    background: url(../images/darkness.png) !important;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.content-line {
-    color: white;
-    text-align: center;
+.content {
+    margin: 15% auto auto;
 }
 
-.content-link {
-    color: white;
+.site-list {
+    list-style-type: none;
+    margin-left: -15px;
+}
+.site-list>li>a:hover {
     text-decoration: none;
 }
-
-.content-link:hover {
-    color: navajowhite;
-    transition: 3s;
-    text-decoration: none;
-}
-
-.fade-in {
-    animation: fadein 3s;
-}
-
-.fade-in-2 {
-    animation: fadein 5s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-.breath {
-    animation: breath-effect 5s infinite;
-}
-
-@keyframes breath-effect {
-    0% {transform:scale(1,1);}
-    50% {transform:scale(1.1,1.1);}
-    100%{transform:scale(1,1);}
-}
-
-.fade-out {
-    animation: fadeout 6s;
-}
-
-@keyframes fadeout {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-
-
-
-
-
