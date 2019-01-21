@@ -17,3 +17,26 @@ body {
 .site-list>li>a:hover {
     text-decoration: none;
 }
+
+.container {
+    padding-top: 30vh;
+    width: 500px;
+}
+.card-body p {
+    font-style: oblique;
+    color: grey;
+    font-size: 12px;
+}
+.site-list {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.site-list li::before {
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 10px;
+    content: '»'
+}
