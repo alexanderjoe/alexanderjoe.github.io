@@ -14,19 +14,40 @@ body {
     list-style-type: none;
     margin-left: -15px;
 }
-.site-list>li>a:hover {
+
+.site-list > li > a:hover {
     text-decoration: none;
 }
 
 .container {
     padding-top: 30vh;
-    width: 500px;
+    width: 25%;
 }
+
+@media (max-width: 1152px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+}
+
 .card-body p {
     font-style: oblique;
     color: grey;
     font-size: 12px;
 }
+
 .site-list {
     list-style: none;
     margin-left: 0;
